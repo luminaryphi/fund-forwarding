@@ -138,6 +138,7 @@ pub fn forward_funds<S: Storage, A: Api, Q: Querier>(
         let cosmos_msg = transfer_msg(
             recipient,
             amount,
+            None,
             padding.clone(),
             BLOCK_SIZE,
             callback_code_hash.clone(),
